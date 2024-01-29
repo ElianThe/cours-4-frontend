@@ -19,6 +19,6 @@ describe('Counter Store', () => {
   it('decrements', () => {
     const store = useCounterStore();
     store.decrement();
-    expect(store.count).toBe(0);
+    expect(store.count).toBe(-1);
   })
 })
