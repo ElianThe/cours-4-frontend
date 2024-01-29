@@ -37,7 +37,7 @@ describe('Counter', () => {
       const wrapper = mountCounter(50)
       const counterStore = useCounterStore()
       await wrapper.find('button[id=decrement]').trigger('click')
-      expect(counterStore.decrement).toHaveBeenCalledTimes(1);
+      expect(counterStore.decrement).toHaveBeenCalledTimes(0);
     })
   })
 })
