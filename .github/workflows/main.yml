@@ -32,4 +32,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run test
+        env:
+          VITE_APP_NAME: ${{ env.VITE_APP_NAME }}
       - run: npm run build
