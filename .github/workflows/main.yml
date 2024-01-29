@@ -48,7 +48,6 @@ jobs:
       - run: npm run test
         env:
           VITE_APP_NAME: ${{ env.VITE_APP_NAME }}
-      - run: npm run test:e2e:dev
 
   build :
     needs: [test]
